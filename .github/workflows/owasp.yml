@@ -57,8 +57,7 @@ jobs:
 
       # See http://jeremylong.github.io/DependencyCheck/dependency-check-cli/ for installation explanation
       - name: Install and run dependency scan
-        id: dep_scan
-        uses: ./.github/workflows/actions/execute_and_retry
+        uses: ./.github/actions/execute_and_retry
         with:
           command: 'gpg --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 259A55407DD6C00299E6607EFFDE55BE73A2D1ED && 
           VERSION=$(curl -s https://jeremylong.github.io/DependencyCheck/current.txt | head -n1 | cut -d' ' -f1) && 
