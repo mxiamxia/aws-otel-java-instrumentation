@@ -1,5 +1,7 @@
 # Reusable Action for executing commands and retrying them if it fails
 name: Command Retry Logic
+description: |
+  A action for adding retries for the applied step
 
 inputs:
   # (Optional) Command to run before the retry command. To be used for environment setup, etc
